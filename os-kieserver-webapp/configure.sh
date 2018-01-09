@@ -15,7 +15,7 @@ KIE_SERVER_WAR_PATH="${KIE_SERVER_WAR_DIR}*"
 KIE_SERVER_METAINF_DIR="${KIE_SERVER_WAR_DIR}/META-INF"
 KIE_SERVER_WEBINF_DIR="${KIE_SERVER_WAR_DIR}/WEB-INF"
 
-if [ -e "${SOURCES_DIR}/jboss-bpmsuite-${BPMSUITE_BASE_VERSION}-deployable-eap7.x.zip" ]; then
+if [ -e ${SOURCES_DIR}/jboss-bpmsuite-${BPMSUITE_BASE_VERSION}-deployable-eap7.x.zip ]; then
     unzip -q ${SOURCES_DIR}/jboss-bpmsuite-${BPMSUITE_BASE_VERSION}-deployable-eap7.x.zip ${KIE_SERVER_WAR_PATH}
     # only install patch over this version
     BPMSUITE_PATCH_DIR="jboss-bpmsuite-${BPMSUITE_PATCH_VERSION}-patch"
