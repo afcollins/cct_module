@@ -8,15 +8,15 @@ ADDED_METAINF_DIR="${ADDED_DIR}/META-INF"
 ADDED_WEBINF_DIR="${ADDED_DIR}/WEB-INF"
 SOURCES_DIR="/tmp/artifacts"
 
-BPMSUITE_BASE_DIR="jboss-eap-6.4"
+BPMSUITE_BASE_DIR="jboss-eap-7.0"
 KIE_SERVER_WAR_DIR="${BPMSUITE_BASE_DIR}/standalone/deployments/kie-server.war"
 # asterix in WAR_PATH includes kie-server.war/ and kie-server.war.dodeploy
 KIE_SERVER_WAR_PATH="${KIE_SERVER_WAR_DIR}*"
 KIE_SERVER_METAINF_DIR="${KIE_SERVER_WAR_DIR}/META-INF"
 KIE_SERVER_WEBINF_DIR="${KIE_SERVER_WAR_DIR}/WEB-INF"
 
-if [ -e "${SOURCES_DIR}/jboss-bpmsuite-${BPMSUITE_BASE_VERSION}-deployable-eap6.x.zip" ]; then
-    unzip -q ${SOURCES_DIR}/jboss-bpmsuite-${BPMSUITE_BASE_VERSION}-deployable-eap6.x.zip ${KIE_SERVER_WAR_PATH}
+if [ -e "${SOURCES_DIR}/jboss-bpmsuite-${BPMSUITE_BASE_VERSION}-deployable-eap7.x.zip" ]; then
+    unzip -q ${SOURCES_DIR}/jboss-bpmsuite-${BPMSUITE_BASE_VERSION}-deployable-eap7.x.zip ${KIE_SERVER_WAR_PATH}
     # only install patch over this version
     BPMSUITE_PATCH_DIR="jboss-bpmsuite-${BPMSUITE_PATCH_VERSION}-patch"
     BPMSUITE_PATCH_ZIP="${SOURCES_DIR}/${BPMSUITE_PATCH_DIR}.zip"
