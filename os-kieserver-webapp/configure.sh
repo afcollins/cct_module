@@ -40,12 +40,10 @@ chmod 664 "${KIE_SERVER_WEBINF_DIR}/lib/openshift-kieserver-jms-${OPENSHIFT_KIES
 chmod 664 "${KIE_SERVER_WEBINF_DIR}/lib/openshift-kieserver-web-${OPENSHIFT_KIESERVER_VERSION}.jar"
 
 cp -f -p ${ADDED_WEBINF_DIR}/ejb-jar.xml ${KIE_SERVER_WEBINF_DIR}/ejb-jar.xml
-cp -f -p ${ADDED_WEBINF_DIR}/jboss-deployment-structure.xml ${KIE_SERVER_WEBINF_DIR}/jboss-deployment-structure.xml
 cp -f -p ${ADDED_WEBINF_DIR}/security-filter-rules.properties ${KIE_SERVER_WEBINF_DIR}/security-filter-rules.properties
 cp -f -p ${ADDED_WEBINF_DIR}/web.xml ${KIE_SERVER_WEBINF_DIR}/web.xml
 # needs to be overwritten by kieserver-launch.sh
 chmod 666 "${KIE_SERVER_WEBINF_DIR}/ejb-jar.xml"
-chmod 664 "${KIE_SERVER_WEBINF_DIR}/jboss-deployment-structure.xml"
 chmod 664 "${KIE_SERVER_WEBINF_DIR}/security-filter-rules.properties"
 chmod 664 "${KIE_SERVER_WEBINF_DIR}/web.xml"
 
